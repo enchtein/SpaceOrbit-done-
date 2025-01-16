@@ -16,3 +16,7 @@
 
 ### Дизайн доступен по ссылке:
 https://drive.google.com/file/d/1kkXDt6bU87pJ114W4fSC7SWpPTncmeAx/view?usp=sharing
+
+
+### Примечание:
+Для использования приложения необходимо создать БД в Firebase и заменить "GoogleService-Info" файл в проекте на новый
