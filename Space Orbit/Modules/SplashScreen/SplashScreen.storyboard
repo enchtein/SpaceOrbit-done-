@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Splash Screen View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="SplashScreenViewController" id="Y6W-OH-hqX" customClass="SplashScreenViewController" customModule="Space_Orbit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pm7-as-szc">
+                                <rect key="frame" x="135" y="364.66666666666669" width="123" height="123"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Pm7-as-szc" secondAttribute="height" multiplier="1:1" id="Fbj-2I-iLt"/>
+                                    <constraint firstAttribute="height" constant="123" id="ydb-GK-9ex"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Jj-bV-xAG" customClass="LottieAnimationView" customModule="Lottie">
+                                <rect key="frame" x="171.66666666666666" y="702" width="50" height="25"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="7VW-sS-8eL"/>
+                                    <constraint firstAttribute="width" secondItem="5Jj-bV-xAG" secondAttribute="height" multiplier="2:1" id="iXv-Wq-E8b"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="animationName" value="app_b_677  - Loading"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="5Jj-bV-xAG" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="047-7e-JJ3"/>
+                            <constraint firstAttribute="bottom" secondItem="5Jj-bV-xAG" secondAttribute="bottom" constant="125" id="eNK-ts-YWb"/>
+                            <constraint firstItem="Pm7-as-szc" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="fWs-i0-PuQ"/>
+                            <constraint firstItem="Pm7-as-szc" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="joM-nI-cZN"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="animationView" destination="5Jj-bV-xAG" id="8ze-cv-zni"/>
+                        <outlet property="rectangleView" destination="Pm7-as-szc" id="ROj-PN-YUL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="55" y="-34"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

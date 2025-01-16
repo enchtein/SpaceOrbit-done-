@@ -1,0 +1,61 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "betAmount" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bet amount"
+          }
+        }
+      }
+    },
+    "coinOut" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Coin out"
+          }
+        }
+      }
+    },
+    "shareWinMsg" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🚀 I just conquered orbit!\nBet: %@\nPoints collected: %@\nMy winnings: %@💰\n\nCan you beat my record? Join the game and test your luck! 🎮✨\n• ссылка на приложение"
+          }
+        }
+      }
+    },
+    "win" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Win!"
+          }
+        }
+      }
+    },
+    "youCrashed" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "You crashed!"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}

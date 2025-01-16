@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="BetAmountCollectionViewCell" customModule="Space_Orbit" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gGf-Xm-A8n">
+                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W0i-MT-a4b">
+                                <rect key="frame" x="2" y="14.666666666666664" width="46" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="W0i-MT-a4b" firstAttribute="leading" secondItem="gGf-Xm-A8n" secondAttribute="leading" constant="2" id="BY2-8D-1DC"/>
+                            <constraint firstItem="W0i-MT-a4b" firstAttribute="centerX" secondItem="gGf-Xm-A8n" secondAttribute="centerX" id="Jke-GF-YD5"/>
+                            <constraint firstItem="W0i-MT-a4b" firstAttribute="centerY" secondItem="gGf-Xm-A8n" secondAttribute="centerY" id="xGM-pM-VyC"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="gGf-Xm-A8n" secondAttribute="trailing" id="KHZ-Fg-JEb"/>
+                <constraint firstItem="gGf-Xm-A8n" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Lcw-I9-Utu"/>
+                <constraint firstAttribute="bottom" secondItem="gGf-Xm-A8n" secondAttribute="bottom" id="Vkk-LE-WDL"/>
+                <constraint firstItem="gGf-Xm-A8n" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="e2a-WF-yMY"/>
+            </constraints>
+            <connections>
+                <outlet property="betAmountLabel" destination="W0i-MT-a4b" id="Tg6-Dx-nMK"/>
+                <outlet property="contentContainer" destination="gGf-Xm-A8n" id="TZL-oV-021"/>
+            </connections>
+            <point key="canvasLocation" x="131" y="-11"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

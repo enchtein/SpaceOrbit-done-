@@ -1,0 +1,28 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "notificationMsg" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Don't miss the chance to earn coins and break your record"
+          }
+        }
+      }
+    },
+    "notificationTitle" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The space jackpot awaits you!"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}

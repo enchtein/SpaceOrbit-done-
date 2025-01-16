@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Game Page Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="GamePageController" id="Y6W-OH-hqX" customClass="GamePageController" customModule="Space_Orbit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rrh-AQ-nVd">
+                                <rect key="frame" x="0.0" y="203.33333333333334" width="393" height="445.33333333333326"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="4Cd-6p-Db8">
+                                        <rect key="frame" x="23" y="35" width="347" height="375.33333333333331"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6N5-LC-DNv">
+                                                <rect key="frame" x="0.0" y="0.0" width="347" height="20.333333333333332"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gcd-8s-p25">
+                                                <rect key="frame" x="0.0" y="28.333333333333343" width="347" height="347"/>
+                                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="Gcd-8s-p25" secondAttribute="height" multiplier="1:1" id="ah8-r7-GHC"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <constraints>
+                                    <constraint firstItem="4Cd-6p-Db8" firstAttribute="centerY" secondItem="Rrh-AQ-nVd" secondAttribute="centerY" id="9l0-X4-75C"/>
+                                    <constraint firstItem="4Cd-6p-Db8" firstAttribute="leading" secondItem="Rrh-AQ-nVd" secondAttribute="leading" constant="23" id="CZk-uB-rL3"/>
+                                    <constraint firstItem="4Cd-6p-Db8" firstAttribute="top" secondItem="Rrh-AQ-nVd" secondAttribute="top" constant="35" id="iLz-Ma-fYE"/>
+                                    <constraint firstItem="4Cd-6p-Db8" firstAttribute="centerX" secondItem="Rrh-AQ-nVd" secondAttribute="centerX" id="xZY-6c-Une"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Rrh-AQ-nVd" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="0Ic-uf-AUN"/>
+                            <constraint firstItem="Rrh-AQ-nVd" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="ECv-lJ-xvV"/>
+                            <constraint firstItem="Rrh-AQ-nVd" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="FEA-Oj-Qn3"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Rrh-AQ-nVd" secondAttribute="trailing" id="qQO-ze-9PW"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="gameContainer" destination="Rrh-AQ-nVd" id="zxu-mG-UCJ"/>
+                        <outlet property="gameContainerCenterY" destination="0Ic-uf-AUN" id="vIr-sj-dp4"/>
+                        <outlet property="gameContainerVStack" destination="4Cd-6p-Db8" id="SEA-QG-0U5"/>
+                        <outlet property="gameContainerVStackLeading" destination="CZk-uB-rL3" id="NGN-8G-h3Q"/>
+                        <outlet property="orbitTitle" destination="6N5-LC-DNv" id="ymB-WR-dbi"/>
+                        <outlet property="spaceOrbitContainer" destination="Gcd-8s-p25" id="dRh-Hb-kmD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="-34"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
