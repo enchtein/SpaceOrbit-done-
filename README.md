@@ -20,3 +20,12 @@ https://drive.google.com/file/d/1kkXDt6bU87pJ114W4fSC7SWpPTncmeAx/view?usp=shari
 
 ### Примечание:
 Для использования приложения необходимо создать БД в Firebase и заменить "GoogleService-Info" файл в проекте на новый
+
+### Настройки проекта:
+>iPhone ONLY  
+>Portrait mode ONLY  
+>Dark theme ONLY  
+>iOS >= 15.0  
+>UIKit  
+>Firebase  
+>Local Push-Notifications  
